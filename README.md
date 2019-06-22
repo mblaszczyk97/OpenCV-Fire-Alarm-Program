@@ -16,9 +16,11 @@ Porównanie:
 W tym wypadku algorytm u¿ywaj¹cy kana³ów RGB dzia³a o wiele szybciej i sprawniej.
 
 2. Ciekawe wyniki mo¿na zaobserwowaæ porównywaj¹c jakoœæ wykrywania po¿arów w obu algorytmach:
+
 </br>
 TEST1
 </br>
+
 Algorytm RGB: 
 </br>
 <img src="https://i.imgur.com/IfVzXUF.png"/>
@@ -30,9 +32,11 @@ Algorytm YCbCr:
 </br>
 </br>
 Jak widaæ na pierwszym porównaniu z pozoru oba algorytmy maj¹ podobn¹ efektywnoœæ natomiast nie do koñca jest to prawda.
-<br>
+
+</br>
 TEST2
 </br>
+
 Algorytm RGB: 
 </br>
 <img src="https://i.imgur.com/0fYAc0U.png"/>
@@ -45,8 +49,10 @@ Algorytm YCbCr:
 </br>
 W drugim przypadku widaæ ju¿ pewne ró¿nice. Algorytm YCbCr wy³apuje tak¿e rozmazane strefy po¿aru, a tak¿e dym, czego nie mo¿na powiedzieæ o algorytmie RGB.
 Jest to tak¿e czêœciowo pewnym problemem tego algorytmu poniewa¿ zdarzaj¹ siê sytuacje kieedy wykrywa element ruchomy jako po¿ar gdy jest to mg³a lub zwyk³y dym, a nawet czasem oœwietlenie.
+
 </br>
 TEST3
+
 </br>
 Algorytm RGB: 
 </br>
