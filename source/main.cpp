@@ -14,7 +14,7 @@ int main(void)
 	namedWindow("Options");
 	cvui::init("Options");
 	VideoCapture cap;
-	cap.open("C:\\Users\\Krowka\\Downloads\\FireOrigin4.mp4");
+	cap.open("C:\\path\\to\\your\\video.mp4");
 	Mat frame, computerVision;
 	Mat options(320, 240, CV_8UC3, Scalar(0, 0, 0));
 	const char *theLabelFormat = "%.1Lf";
@@ -36,19 +36,19 @@ int main(void)
 		cvui::trackbar(options, 11, 70, 220, &f1.errorSize, 1, 100, segments, theLabelFormat, cvui::TRACKBAR_HIDE_VALUE_LABEL, segments);
 		if (cvui::button(options, 1, 21, "0")) {
 			cap.release();
-			cap.open("C:\\Users\\Krowka\\Downloads\\FireOrigin9.mp4");
+			cap.open("C:\\path\\to\\your\\videoTest1.mp4");
 		}
 		if (cvui::button(options, 31, 21, "Video1")) {
 			cap.release();
-			cap.open("C:\\Users\\Krowka\\Downloads\\FireOrigin4.mp4");
+			cap.open("C:\\path\\to\\your\\videoTest2.mp4");
 		}
 		if (cvui::button(options, 101, 21, "Video2")) {
 			cap.release();
-			cap.open("C:\\Users\\Krowka\\Downloads\\FireOrigin1.mp4");
+			cap.open("C:\\path\\to\\your\\videoTest3.mp4");
 		}
 		if (cvui::button(options, 171, 21, "Video3")) {
 			cap.release();
-			cap.open("C:\\Users\\Krowka\\Downloads\\FireOrigin.mp4");
+			cap.open("C:\\path\\to\\your\\videoTest4.mp4");
 		}
 
 		if (cvui::button(options, 11, 141, "RGB Detect")) {
